@@ -4,7 +4,7 @@ import pandas as pd
 word = pd.read_excel('English_words01.xlsx', sheet_name='words')
 
 # 테스트 Day 선택하기
-day_no = input('단어 연습할 Day를 선택해 주세요:')
+day_no = input("단어 연습할 Day를 선택해 주세요:")
 
 # 점수 초기화
 score = 0
@@ -31,13 +31,13 @@ while j <= k:
     answer = input(" >> 영어 단어: ")
 
     # 정답인 경우
-    if answer == word['단어'][j]:
+    if answer == word["단어"][j]:
         print("정답입니다!")
         score += 1
 
     # 오답인 경우
     else:
-        print("오답, 정답은 " + word['단어'][j])
+        print("오답, 정답은 " + word["단어"][j])
 
     print("\n")
     j += 1
