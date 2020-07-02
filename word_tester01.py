@@ -26,8 +26,8 @@ elif page_no == "3":
 # 테스트
 while j <= k:
 
-    # 엑셀 파일에서 불러온 'words'시트에서 뜻 column을 불러와서 문제
-    print(word['뜻'][j])
+    # 엑셀 파일에서 불러온 'words'시트에서 뜻 column을 불러와서 문제 제출
+    print(word["뜻"][j])
     answer = input(" >> 영어 단어: ")
 
     # 정답인 경우
@@ -39,7 +39,7 @@ while j <= k:
     else:
         print("오답, 정답은 " + word["단어"][j])
 
-    print("\n")
+    print('\n')
     j += 1
 
 # 테스트 종료
