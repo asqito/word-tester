@@ -1,6 +1,6 @@
 import pandas as pd
 
-# 파일 불러오기
+# 파일에서 'words' 시트 불러오기
 word = pd.read_excel('English_words01.xlsx', sheet_name='words')
 
 # 테스트 Day 선택하기
@@ -10,6 +10,7 @@ day_no = input('단어 연습할 Day를 선택해 주세요:')
 score = 0
 
 # 테스트 페이지 선택하기
+# 단어는 10개씩 테스트
 if day_no == "1":
     j = 0
     k = 9
@@ -25,6 +26,7 @@ elif page_no == "3":
 # 테스트
 while j <= k:
 
+    # 엑셀 파일에서 불러온 'words'시트에서 뜻 column을 불러와서 문제
     print(word['뜻'][j])
     answer = input(" >> 영어 단어: ")
 
